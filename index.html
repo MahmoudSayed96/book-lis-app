@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Book List JS-OOP App</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main class="container">
+        <h1 class="display-4 text-center my-3">Book List App</h1>
+        <div class="row">
+            <div class="col-sm-8 offset-sm-2">
+                <h2 class="h4">Add New Book</h2>
+                <div id="book-card" class="card card-body my-3">
+                    <form id="book-form">
+                        <!-- Book Title -->
+                        <div class="form-group">
+                            <label for="book-title">
+                                <strong>Book Title</strong>
+                            </label>
+                            <input type="text" id="book-title" class="form-control">
+                        </div>
+                        <!-- Book Author -->
+                        <div class="form-group">
+                            <label for="book-author">
+                                <strong>Book Author</strong>
+                            </label>
+                            <input type="text" id="book-author" class="form-control">
+                        </div>
+                        <!-- Book ISBN -->
+                        <div class="form-group">
+                            <label for="book-isbn">
+                                <strong>Book ISBN</strong>
+                            </label>
+                            <input type="text" id="book-isbn" class="form-control">
+                        </div>
+                        <button type="submit" class="btn-add-book btn btn-lg btn-block">Add Book</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col md-8 offse-sm-2">
+                <div class="table-responsive mt-4">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Title</th>
+                                <th scope="col">Author</th>
+                                <th scope="col">ISBN</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="book-list"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- jQuery -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
